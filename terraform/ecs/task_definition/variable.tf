@@ -3,11 +3,6 @@ variable "cluster_name" {
   type        = string
 }
 
-variable "task_exec_role_arn" {
-  description = "IAM Role ARN for ECS Task Execution"
-  type        = string
-}
-
 variable "ecr_image" {
   description = "ECR image URI for the container"
   type        = string
