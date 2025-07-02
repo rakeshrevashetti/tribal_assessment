@@ -6,6 +6,14 @@ module "network" {
   source = "./ecs/vpc"
   vpc_cidr   = var.vpc_cidr
   vpc_name   = var.vpc_name
+  public_subnet_a_cidr  = var.public_subnet_a_cidr
+  public_subnet_b_cidr  = var.public_subnet_b_cidr
+
+  availability_zone_a   = var.availability_zone_a
+  availability_zone_b   = var.availability_zone_b
+
+  public_subnet_a_name  = var.public_subnet_a_name
+  public_subnet_b_name  = var.public_subnet_b_name
 }
 
 module "ecs_cluster" {
