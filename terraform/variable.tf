@@ -10,11 +10,6 @@ variable "ecs_cluster_name" {
   default     = "tribal-ecs-cluster"
 }
 
-variable "task_exec_role_arn" {
-  description = "IAM Role ARN for ECS task execution"
-  type        = string
-}
-
 variable "ecr_image" {
   description = "ECR image URL for container"
   type        = string
