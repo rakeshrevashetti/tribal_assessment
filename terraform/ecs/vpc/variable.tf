@@ -8,9 +8,6 @@ variable "vpc_name" {
   type        = string
 }
 
-variable "vpc_cidr" {}
-variable "vpc_name" {}
-
 variable "public_subnet_a_cidr" {}
 variable "public_subnet_b_cidr" {}
 
