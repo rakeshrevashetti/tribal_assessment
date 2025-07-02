@@ -31,7 +31,6 @@ module "alb" {
 module "ecs_app" {
   source                 = "./ecs/task_definition"
   cluster_name           = module.ecs_cluster.ecs_cluster_name
-  task_exec_role_arn     = var.task_exec_role_arn
   ecr_image              = var.ecr_image
   subnets                = module.network.public_subnet_ids
   security_group_id      = module.network.ecs_sg_id
