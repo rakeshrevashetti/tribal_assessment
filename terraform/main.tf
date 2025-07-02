@@ -4,6 +4,8 @@ provider "aws" {
 
 module "network" {
   source = "./ecs/vpc"
+  vpc_cidr   = var.vpc_cidr
+  vpc_name   = var.vpc_name
 }
 
 module "ecs_cluster" {
